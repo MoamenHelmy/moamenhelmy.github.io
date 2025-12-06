@@ -2467,8 +2467,11 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Moamen additional CSS
 --------------------------------------------------------------*/
-/* .starter-section {
-  Add your styles here 
-} */
+.moamensummary {
+  text-align: justify;
+}
+#skillul{
+  columns: 2;
+}
