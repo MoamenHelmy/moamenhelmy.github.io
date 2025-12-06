@@ -524,7 +524,7 @@ section,
 }
 
 .hero .hero-text h1 {
-  font-size: 72px;
+  font-size: 60px;
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 15px;
@@ -930,6 +930,10 @@ section,
   line-height: 1.7;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 1.5rem;
+}
+
+.description{
+  text-align: justify;
 }
 
 .about .about-content .description p:last-child {
