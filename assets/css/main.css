@@ -1536,3 +1536,23 @@ section,
     margin-top: 30px;
   }
 }
+/*  */
+.portfolio-links .thumb {
+  width: 4px;
+  height: 45px;
+  display: inline-block;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  transition: 0.3s;
+  opacity: .7;
+}
+
+/* Hover effect */
+.portfolio-links .thumb:hover {
+  transform: scale(1.1);
+  border-color: black;
+  opacity: 1;
+}
