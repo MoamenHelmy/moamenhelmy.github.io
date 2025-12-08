@@ -454,6 +454,7 @@ section,
 
 .section-title p {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -832,7 +833,9 @@ section,
   color: var(--heading-color);
   font-weight: 600;
 }
-
+#mail{
+  font-size: .9rem;
+}
 .resume .resume-section h3 i {
   color: var(--accent-color);
 }
@@ -1142,7 +1145,7 @@ section,
 
 .contact .info-item .content p {
   margin-bottom: 0.25rem;
-  font-size: 0.95rem;
+  font-size: 0.86rem;
 }
 
 .contact .info-item .content p:last-child {
@@ -1532,14 +1535,4 @@ section,
   .service-details .related-services {
     margin-top: 30px;
   }
-}
-
-/*--------------------------------------------------------------
-# Moamen additional CSS
---------------------------------------------------------------*/
-.moamensummary {
-  text-align: justify;
-}
-#mail{
-  font-size: .9rem;
 }
