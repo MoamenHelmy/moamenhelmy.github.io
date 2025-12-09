@@ -22,6 +22,9 @@
   --nav-mobile-background-color: #393939; /* Used as the background color for mobile navigation menu */
 }
 
+html{
+  scroll-behavior: smooth;
+}
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
