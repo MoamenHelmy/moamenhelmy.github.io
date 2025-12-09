@@ -220,6 +220,10 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+(function() {
+        // 1. Initialize EmailJS with your Public Key
+        emailjs.init("TnRQpDx1JUT4AMZrB"); 
+    })();
 window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
