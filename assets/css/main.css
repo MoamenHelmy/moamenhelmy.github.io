@@ -1559,3 +1559,7 @@ section,
   border-color: black;
   opacity: 1;
 }
+.notification-toast{
+  background-color: #232323;
+  color: white;
+}

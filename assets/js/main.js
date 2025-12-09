@@ -233,13 +233,37 @@ window.onload = function() {
         const templateID = 'template_k8xn2d7';
 
         // Send the form data
+        const contactButton = document.getElementById('btn');
+        const buttonLoader = document.getElementById('btnloader');
+        contactButton.disabled = true;
+        buttonLoader.style.display = 'inline-block';
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
-                alert('Sent successfully!');
+                contactButton.disabled = false;
+                buttonLoader.style.display = 'none';
+                Toastify({
+                            text: "Message sent successfully!",
+                            className: "notification-toast",
+                            style: {
+                              background: "var(--surface-color)",
+                              color: "var(--default-color)"
+                            }
+                          }).showToast();
                 // Optionally reset the form
                 this.reset();
             }, (err) => {
-                alert(JSON.stringify(err));
+                contactButton.disabled = false;
+                buttonLoader.style.display = 'none';
+                Toastify({
+                            text: "Error sending message. Please try again.",
+                            className: "notification-toast",
+                            style: {
+                              background: "#AA151B",
+                              color: "var(--default-color)"
+                            }
+                          }).showToast();
+                // Optionally reset the form
+                this.reset();
             });
     });
 }
